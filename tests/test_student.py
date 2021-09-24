@@ -12,5 +12,12 @@ def test_add_class_method_adds_correct_class_name():
   class_name = "English"
 
   student.add_class(class_name)
-
+  #assert
   assert student.classes == ["Calculus", "Choir", "Photography", "AP History", "English"]
+
+def test_get_num_classes_returns_correct():
+  # act
+  student = Student("Trenisha", "senior", ["Calculus", "Choir", "Photography", "AP History"])
+
+  # assert
+  assert student.get_num_classes() == 4
