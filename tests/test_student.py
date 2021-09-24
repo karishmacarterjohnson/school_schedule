@@ -21,3 +21,8 @@ def test_get_num_classes_returns_correct():
 
   # assert
   assert student.get_num_classes() == 4
+
+def test_summary_method_returns_correct_string():
+  samara = Student( "Samara", "junior", [ "Pre-Calc", "English III", "World History", "Gym", "Chemistry", "Music Composition" ] )
+
+  assert samara.summary() == "Samara is a junior enrolled in 6 classes"
